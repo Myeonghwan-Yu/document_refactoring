@@ -26,7 +26,7 @@ model Documents {
   userId    Int        @unique @map("userId")
   title     String     @map("title")
   content   String     @db.Text @map("content")
-  status    Status     @map("status")
+  status    Status     @default(APPLY) @map("status")
   createdAt DateTime   @default(now()) @map("createdAt")
   updatedAt DateTime   @updatedAt @map("updatedAt")
 
