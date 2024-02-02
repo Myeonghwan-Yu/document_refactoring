@@ -23,7 +23,7 @@ model Users {
 
 model Documents {
   postId    Int        @id @default(autoincrement()) @map("postId")
-  userId    Int        @unique @map("userId")
+  userId    Int        @map("userId")
   title     String     @map("title")
   content   String     @db.Text @map("content")
   status    Status     @default(APPLY) @map("status")
