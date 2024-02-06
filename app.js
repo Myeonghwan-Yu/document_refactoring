@@ -12,7 +12,7 @@ app.use(cookieParser());
 app.use('/api', [UsersRouter, PostRouter]);
 
 app.get('/', (req, res) =>{
-  console.log('hello');
+  res.send('hello');
 })
 
 app.listen(PORT, () => {
