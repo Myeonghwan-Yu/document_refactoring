@@ -1,7 +1,6 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
-import UsersRouter from './routers/users.router.js';
-import PostRouter from './routers/documents.router.js';
+import router from './routes/index.js'
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -11,7 +10,7 @@ const PORT = 3000;
 app.use(express.json());
 app.use(cookieParser());
 
-app.use('/api', [UsersRouter, PostRouter]);
+app.use('/api', router);
 
 app.get('/', (req, res) =>{
   res.send('hello');
