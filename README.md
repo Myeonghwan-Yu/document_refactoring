@@ -10,8 +10,6 @@ https://www.erdcloud.com/d/bbBsWGEtNAeQxf6dc
 
 - DB_URL
 - JWT_SECRET
-- 그 밖의 사용한 환경변수를 나열해 주세요.
-> 아직 환경변수 학습이 부족한 것 같습니다. 무슨 환경변수를 이용했는지 잘 모르겠습니다.
 
 # 더 고민해 보기
 1. **암호화 방식**
